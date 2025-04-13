@@ -1,9 +1,7 @@
 
 **Title:** **Accelerating Reinforcement Learning on Procedural Tasks with a Differentiable Neural Computer**
 
-**Authors:** [Your Name/Affiliation Here]
-
-**(Note:** This paper uses hypothetical results based on the project's stated goal of 40% improvement. Real experiments would be needed to validate these claims.)*
+**Author:** Gift Braimah
 
 ---
 
