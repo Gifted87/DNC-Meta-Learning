@@ -1,0 +1,34 @@
+# Environment Configuration
+env:
+  type: 'ProceduralMazeEnv' # Options: ProceduralMazeEnv, RepeatCopyEnv, or gym ID
+  # --- Maze Specific ---
+  width: 5
+  height: 5
+  max_steps: 100
+  # --- RepeatCopy Specific ---
+  # max_seq_len: 5
+  # max_repeats: 3
+
+# Model Configuration
+model:
+  type: 'lstm'
+  hidden_size: 128 # Match DNC controller size for somewhat fair comparison
+
+# Training Hyperparameters
+training:
+  num_episodes: 5000       # Total episodes for training
+  learning_rate: 5e-4      # Optimizer learning rate
+  adam_eps: 1e-5           # Adam optimizer epsilon for numerical stability
+  gamma: 0.99              # Discount factor for future rewards
+  lambda_gae: 0.95         # GAE parameter for advantage calculation
+  value_loss_coef: 0.5     # Weight for the value loss component
+  entropy_coef: 0.01       # Weight for the entropy bonus (encourages exploration)
+  grad_clip_norm: 0.5      # Maximum norm for gradient clipping (prevents explosions)
+  n_steps_update: 20       # Number of environment steps to collect before each A2C update
+  save_interval: 500       # Save a model checkpoint every N episodes
+  save_dir: 'saved_models' # Directory to save model checkpoints
+
+# Logging Configuration
+logging:
+  log_dir: 'runs/'         # Base directory for TensorBoard logs and run artifacts
+
