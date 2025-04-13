@@ -131,9 +131,6 @@ Visualizations of the DNC's memory access patterns (Figure 4 - *placeholder*, ge
 *   On the maze task, we observe the write head becoming active as new parts of the maze are explored, potentially storing spatial layout information. Read heads show focused access patterns when the agent needs to recall paths or navigate junctions. Usage patterns indicate that memory slots are allocated and reused over time.
 *   On the RepeatCopy task, write patterns correspond to the input sequence presentation. During the output phase, read heads exhibit sequential access patterns corresponding to the sequence structure, demonstrating retrieval of the stored information. Usage remains relatively stable during output, indicating primarily read operations.
 
-**(Placeholder Figure)**
-*   *Figure 4: Example GIF animation of DNC memory access (read/write weights, usage) during a maze episode.*
-
 **5.3 Discussion**
 
 The (hypothetical) results strongly suggest that the DNC's external memory provides a significant advantage over standard LSTMs for RL agents tackling tasks with substantial memory demands. The improved sample efficiency on the maze task indicates that explicitly storing and retrieving spatial information accelerates learning. The near-perfect performance on RepeatCopy underscores the DNC's capability for precise sequential data manipulation, a known weakness of standard RNNs.
