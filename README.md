@@ -65,7 +65,7 @@ dnc-meta-learning/
 **1. Clone & Setup Environment:**
 
 ```bash
-git clone https://github.com/your-username/dnc-meta-learning.git # TODO: Update URL
+git clone https://github.com/Gifted87/dnc-meta-learning.git # TODO: Update URL
 cd dnc-meta-learning
 
 # Create conda environment (recommended)
